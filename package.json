@@ -1,0 +1,50 @@
+{
+  "name": "ecorise2-o",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "ECORISE2.O - Local Eco-Challenge and live climate action platform for the Ramaiah University Applied Science Micro Hackathon 2026.",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/index.js",
+    "dev:all": "concurrently -k -n \"CLIENT,SERVER\" -c \"cyan,magenta\" \"vite\" \"node server/index.js\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "bcryptjs": "^3.0.3",
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "framer-motion": "^12.4.7",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.16.0",
+    "mongoose": "^9.10.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.1",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^22.13.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^10.0.5",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+}

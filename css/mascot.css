@@ -1,0 +1,272 @@
+/* ==========================================================================
+   EcoRise - Local Eco-Challenge: EcoByte 🌱🤖 Mascot Styling & Animations
+   Original character styling & dynamic evolution system
+   ========================================================================== */
+
+.ecobyte-svg-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform var(--transition-fast);
+}
+
+.ecobyte-svg-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.ecobyte-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 12px 20px rgba(16, 185, 129, 0.18));
+}
+
+/* Base Mascot Animations */
+.ecobyte-group-floating {
+  animation: ecoByteHover 3.6s ease-in-out infinite alternate;
+  transform-origin: center bottom;
+}
+
+@keyframes ecoByteHover {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(0.8deg); }
+  100% { transform: translateY(-14px) rotate(-0.8deg); }
+}
+
+/* Cheering Animation when Activity Completed */
+.ecobyte-cheering .ecobyte-group-floating {
+  animation: ecoByteCheer 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes ecoByteCheer {
+  0% { transform: scale(1) translateY(0); }
+  25% { transform: scale(1.15, 0.85) translateY(4px); }
+  50% { transform: scale(0.95, 1.15) translateY(-24px) rotate(6deg); }
+  75% { transform: scale(1.05, 0.95) translateY(-10px) rotate(-4deg); }
+  100% { transform: scale(1) translateY(0) rotate(0); }
+}
+
+/* Eye Blinking */
+.ecobyte-eye {
+  transform-origin: center;
+  animation: ecoByteBlink 4.2s infinite;
+}
+
+@keyframes ecoByteBlink {
+  0%, 94%, 98%, 100% { transform: scaleY(1); }
+  96% { transform: scaleY(0.1); }
+}
+
+/* Energy Core Pulse */
+.ecobyte-core {
+  transform-origin: center;
+  animation: corePulse 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes corePulse {
+  0% {
+    opacity: 0.75;
+    transform: scale(0.96);
+    filter: drop-shadow(0 0 4px var(--core-glow));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 16px var(--core-color));
+  }
+}
+
+/* Stage-specific Evolution Styles */
+/* Stage 0: 0-19 points */
+.ecobyte-stage-0 .ecobyte-plant-stage-1,
+.ecobyte-stage-0 .ecobyte-plant-stage-2,
+.ecobyte-stage-0 .ecobyte-plant-stage-3,
+.ecobyte-stage-0 .ecobyte-crown,
+.ecobyte-stage-0 .ecobyte-energy-aura {
+  display: none !important;
+}
+
+.ecobyte-stage-0 .ecobyte-core {
+  animation-duration: 3s;
+  opacity: 0.6;
+}
+
+/* Stage 1: 20-49 points */
+.ecobyte-stage-1 .ecobyte-plant-stage-0,
+.ecobyte-stage-1 .ecobyte-plant-stage-2,
+.ecobyte-stage-1 .ecobyte-plant-stage-3,
+.ecobyte-stage-1 .ecobyte-crown,
+.ecobyte-stage-1 .ecobyte-energy-aura {
+  display: none !important;
+}
+
+.ecobyte-stage-1 .ecobyte-core {
+  animation-duration: 2s;
+  opacity: 0.85;
+}
+
+/* Stage 2: 50-99 points */
+.ecobyte-stage-2 .ecobyte-plant-stage-0,
+.ecobyte-stage-2 .ecobyte-plant-stage-1,
+.ecobyte-stage-2 .ecobyte-crown,
+.ecobyte-stage-2 .ecobyte-energy-aura {
+  display: none !important;
+}
+
+.ecobyte-stage-2 .ecobyte-core {
+  animation-duration: 1.5s;
+  opacity: 1;
+  filter: drop-shadow(0 0 14px #22c55e);
+}
+
+/* Stage 3: 100+ points - Super Champion! */
+.ecobyte-stage-3 .ecobyte-plant-stage-0,
+.ecobyte-stage-3 .ecobyte-plant-stage-1,
+.ecobyte-stage-3 .ecobyte-plant-stage-2 {
+  display: none !important;
+}
+
+.ecobyte-stage-3 .ecobyte-energy-aura {
+  display: block !important;
+  animation: auraSpin 12s linear infinite;
+  transform-origin: center;
+}
+
+.ecobyte-stage-3 .ecobyte-core {
+  animation: championCorePulse 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes auraSpin {
+  0% { transform: rotate(0deg) scale(1); opacity: 0.7; }
+  50% { transform: rotate(180deg) scale(1.08); opacity: 0.95; }
+  100% { transform: rotate(360deg) scale(1); opacity: 0.7; }
+}
+
+@keyframes championCorePulse {
+  0% { transform: scale(0.95); filter: drop-shadow(0 0 8px #10b981) drop-shadow(0 0 18px #3b82f6); }
+  100% { transform: scale(1.12); filter: drop-shadow(0 0 20px #34d399) drop-shadow(0 0 28px #10b981); }
+}
+
+/* Plant Sway */
+.ecobyte-plant-sway {
+  transform-origin: 100px 48px;
+  animation: plantSway 2.8s ease-in-out infinite alternate;
+}
+
+@keyframes plantSway {
+  0% { transform: rotate(-3deg); }
+  100% { transform: rotate(4deg); }
+}
+
+/* Expression: Happy squint on cheerful / high progress */
+.ecobyte-happy-eyes .ecobyte-eye-round {
+  display: none;
+}
+.ecobyte-happy-eyes .ecobyte-eye-happy {
+  display: block !important;
+}
+
+.ecobyte-star-eyes .ecobyte-eye-round,
+.ecobyte-star-eyes .ecobyte-eye-happy {
+  display: none;
+}
+.ecobyte-star-eyes .ecobyte-eye-star {
+  display: block !important;
+}
+
+/* Mini Avatar in Nav */
+.mini-avatar-svg {
+  width: 28px;
+  height: 28px;
+  overflow: visible;
+}
+
+/* Motivation Card Layout */
+.motivation-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, var(--bg-card), var(--primary-light));
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.motivation-mascot-slot {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.motivation-content {
+  flex: 1;
+}
+
+.motivation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.motivation-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.motivation-message {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.4;
+}
+
+.motivation-subtext {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.btn-mascot-poke {
+  font-size: 0.78rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.btn-mascot-poke:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+@media (max-width: 640px) {
+  .motivation-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+  }
+  .motivation-header {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,625 @@
+{
+  "users": [
+    {
+      "_id": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "id": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "name": "Maya Lin",
+      "email": "ecotest_1789542170606@example.com",
+      "password": "$2b$10$ENFTQIFha8PUdZ75rKDlDeR5U3LoefjT.72mwSlPaRG8csSKfTLhu",
+      "city": "Greenwood District",
+      "school": "Civic Climate Academy",
+      "ecoPoints": 50,
+      "streak": 2,
+      "longestStreak": 2,
+      "shields": 1,
+      "lastActiveDate": "2026-09-16",
+      "onboardingCompleted": true,
+      "createdAt": "2026-09-16T07:02:50.861Z",
+      "updatedAt": "2026-09-16T07:02:50.965Z",
+      "currentCycleId": "aca284e8-73da-4967-a115-7c5ce00ca1a4"
+    },
+    {
+      "_id": "1ea8e937-389d-4eab-aab9-0d082106eb76",
+      "id": "1ea8e937-389d-4eab-aab9-0d082106eb76",
+      "name": "life",
+      "email": "student@ayushsetu.edu.in",
+      "password": "$2b$10$6auoY9g2WqnFkCbs67m.g.n/M1ZEVN5IkOrzgxT8MWiu1QkNLJIUu",
+      "city": "samrat",
+      "school": "Civic Climate Academy",
+      "ecoPoints": 0,
+      "streak": 0,
+      "longestStreak": 0,
+      "shields": 1,
+      "lastActiveDate": "2026-09-16",
+      "onboardingCompleted": false,
+      "createdAt": "2026-09-16T07:04:25.575Z",
+      "updatedAt": "2026-09-16T07:05:40.466Z",
+      "currentCycleId": "59d3a9f9-cf15-4551-af25-dc160268f29f"
+    },
+    {
+      "_id": "af4ce98f-162f-4bd5-ada6-ce8e301f588c",
+      "id": "af4ce98f-162f-4bd5-ada6-ce8e301f588c",
+      "name": "sanjana",
+      "email": "sanjansd@gmail.com",
+      "password": "$2b$10$qhjcRq8eO9tnraF5XhIYf.aumoKtHYNLBdHwXTWdzIH76S3KYkLgy",
+      "city": "Bangalore",
+      "school": "Civic Climate Academy",
+      "ecoPoints": 20,
+      "streak": 1,
+      "longestStreak": 0,
+      "shields": 1,
+      "lastActiveDate": "2026-09-16",
+      "onboardingCompleted": true,
+      "createdAt": "2026-09-16T07:07:30.597Z",
+      "updatedAt": "2026-09-16T07:08:07.099Z",
+      "currentCycleId": "fa2e82b5-3b16-4e3d-9fb0-020e8573e427"
+    },
+    {
+      "_id": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "id": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "name": "Rohith",
+      "email": "rohiths@gamil.com",
+      "password": "$2b$10$ICPqLqReDhouKsWZaSBMbeD.I48ew8iC3.YrQ8Pz1dXmoTdHYZMIi",
+      "city": "Bangalore",
+      "school": "Civic Climate Academy",
+      "ecoPoints": 50,
+      "streak": 2,
+      "longestStreak": 2,
+      "shields": 1,
+      "lastActiveDate": "2026-09-16",
+      "onboardingCompleted": true,
+      "createdAt": "2026-09-16T07:21:14.959Z",
+      "updatedAt": "2026-09-16T07:24:57.000Z",
+      "currentCycleId": "083f6b54-f8d6-4eaf-a7cd-e8eaad12aead"
+    }
+  ],
+  "co2Profiles": [
+    {
+      "_id": "6e24e654-e290-458a-a387-82b6bab2198d",
+      "id": "6e24e654-e290-458a-a387-82b6bab2198d",
+      "userId": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "transportMode": "car",
+      "vehicleType": "petrol",
+      "distancePerTrip": 8,
+      "distanceType": "one-way",
+      "tripsPerWeek": 5,
+      "hasPublicTransitAccess": true,
+      "weeklyDistanceKm": 80,
+      "emissionFactor": 0.17,
+      "baselineWeeklyCO2e": 13.6,
+      "currentWeeklyCO2e": 12.9,
+      "baselineMonthlyCO2e": 58.9,
+      "currentMonthlyCO2e": 55.9,
+      "baselineYearlyCO2e": 707.2,
+      "currentYearlyCO2e": 670.8,
+      "lastCalculatedAt": "2026-09-16T07:02:50.915Z",
+      "createdAt": "2026-09-16T07:02:50.915Z",
+      "updatedAt": "2026-09-16T07:02:50.962Z"
+    },
+    {
+      "_id": "8f8e24ac-c129-43f1-aada-2a4f8e787399",
+      "id": "8f8e24ac-c129-43f1-aada-2a4f8e787399",
+      "userId": "af4ce98f-162f-4bd5-ada6-ce8e301f588c",
+      "transportMode": "bus",
+      "vehicleType": "electric",
+      "distancePerTrip": 36,
+      "distanceType": "one-way",
+      "tripsPerWeek": 1,
+      "hasPublicTransitAccess": true,
+      "weeklyDistanceKm": 72,
+      "emissionFactor": 0.082,
+      "baselineWeeklyCO2e": 5.9,
+      "currentWeeklyCO2e": 5.9,
+      "baselineMonthlyCO2e": 25.5,
+      "currentMonthlyCO2e": 25.5,
+      "baselineYearlyCO2e": 306.8,
+      "currentYearlyCO2e": 306.8,
+      "lastCalculatedAt": "2026-09-16T07:08:07.089Z",
+      "createdAt": "2026-09-16T07:08:07.089Z",
+      "updatedAt": "2026-09-16T07:08:07.089Z"
+    },
+    {
+      "_id": "e17adc57-b373-4e44-b831-9452e629795b",
+      "id": "e17adc57-b373-4e44-b831-9452e629795b",
+      "userId": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "transportMode": "car",
+      "vehicleType": "petrol",
+      "distancePerTrip": 36,
+      "distanceType": "round-trip",
+      "tripsPerWeek": 3,
+      "hasPublicTransitAccess": true,
+      "weeklyDistanceKm": 108,
+      "emissionFactor": 0.17,
+      "baselineWeeklyCO2e": 18.4,
+      "currentWeeklyCO2e": 17.7,
+      "baselineMonthlyCO2e": 79.7,
+      "currentMonthlyCO2e": 76.6,
+      "baselineYearlyCO2e": 956.8,
+      "currentYearlyCO2e": 920.4,
+      "lastCalculatedAt": "2026-09-16T07:23:22.687Z",
+      "createdAt": "2026-09-16T07:23:22.687Z",
+      "updatedAt": "2026-09-16T07:24:56.992Z"
+    }
+  ],
+  "co2Snapshots": [
+    {
+      "_id": "23adcd3f-cb05-416a-9878-26561894fab0",
+      "id": "23adcd3f-cb05-416a-9878-26561894fab0",
+      "userId": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "weekNumber": 1,
+      "weekLabel": "Baseline",
+      "estimatedWeeklyCO2e": 13.6,
+      "recordedAt": "2026-09-16T07:02:50.919Z",
+      "createdAt": "2026-09-16T07:02:50.920Z",
+      "updatedAt": "2026-09-16T07:02:50.920Z"
+    },
+    {
+      "_id": "1fccccac-a977-4a80-a72e-5cfa0e8615ef",
+      "id": "1fccccac-a977-4a80-a72e-5cfa0e8615ef",
+      "userId": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "weekNumber": 2,
+      "weekLabel": "Week 2",
+      "estimatedWeeklyCO2e": 12.9,
+      "recordedAt": "2026-09-16T07:02:50.963Z",
+      "createdAt": "2026-09-16T07:02:50.963Z",
+      "updatedAt": "2026-09-16T07:02:50.963Z"
+    },
+    {
+      "_id": "5b5581f9-7746-43e1-9245-c89e4650f8df",
+      "id": "5b5581f9-7746-43e1-9245-c89e4650f8df",
+      "userId": "af4ce98f-162f-4bd5-ada6-ce8e301f588c",
+      "weekNumber": 1,
+      "weekLabel": "Baseline",
+      "estimatedWeeklyCO2e": 5.9,
+      "recordedAt": "2026-09-16T07:08:07.092Z",
+      "createdAt": "2026-09-16T07:08:07.092Z",
+      "updatedAt": "2026-09-16T07:08:07.092Z"
+    },
+    {
+      "_id": "588c2278-23ea-4f72-b330-7f8a51ec1300",
+      "id": "588c2278-23ea-4f72-b330-7f8a51ec1300",
+      "userId": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "weekNumber": 1,
+      "weekLabel": "Baseline",
+      "estimatedWeeklyCO2e": 18.4,
+      "recordedAt": "2026-09-16T07:23:22.693Z",
+      "createdAt": "2026-09-16T07:23:22.693Z",
+      "updatedAt": "2026-09-16T07:23:22.693Z"
+    },
+    {
+      "_id": "6bb78fe3-37a5-4dfa-8982-8d8d45b2e5cd",
+      "id": "6bb78fe3-37a5-4dfa-8982-8d8d45b2e5cd",
+      "userId": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "weekNumber": 2,
+      "weekLabel": "Week 2",
+      "estimatedWeeklyCO2e": 17.7,
+      "recordedAt": "2026-09-16T07:24:56.995Z",
+      "createdAt": "2026-09-16T07:24:56.995Z",
+      "updatedAt": "2026-09-16T07:24:56.995Z"
+    }
+  ],
+  "challengeCycles": [
+    {
+      "_id": "aca284e8-73da-4967-a115-7c5ce00ca1a4",
+      "id": "aca284e8-73da-4967-a115-7c5ce00ca1a4",
+      "userId": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "cycleNumber": 1,
+      "startDate": "2026-09-16T07:02:50.930Z",
+      "endDate": "2026-09-19T07:02:50.930Z",
+      "status": "active",
+      "days": [
+        {
+          "day": 1,
+          "title": "Shift 1 Trip to Public Transit or Metro",
+          "description": "Leave your motor vehicle parked and take the bus or metro for at least one commute.",
+          "category": "transport",
+          "co2SavingEstimate": 1.4,
+          "points": 30,
+          "completed": true,
+          "completedAt": "2026-09-16T07:02:50.959Z",
+          "verificationNote": "Shifted morning commute to light rail transit"
+        },
+        {
+          "day": 2,
+          "title": "Zero Vampire Power & Unplug Chargers",
+          "description": "Turn off power strips and disconnect laptops and appliances before going to sleep.",
+          "category": "energy",
+          "co2SavingEstimate": 0.5,
+          "points": 20,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        },
+        {
+          "day": 3,
+          "title": "Plant-Rich Day / Meatless Meal",
+          "description": "Enjoy delicious plant-based protein dishes to cut agricultural emissions.",
+          "category": "waste",
+          "co2SavingEstimate": 1.2,
+          "points": 25,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        }
+      ],
+      "allCompleted": false,
+      "bonusPointsAwarded": false,
+      "createdAt": "2026-09-16T07:02:50.935Z",
+      "updatedAt": "2026-09-16T07:02:50.966Z"
+    },
+    {
+      "_id": "59d3a9f9-cf15-4551-af25-dc160268f29f",
+      "id": "59d3a9f9-cf15-4551-af25-dc160268f29f",
+      "userId": "1ea8e937-389d-4eab-aab9-0d082106eb76",
+      "cycleNumber": 1,
+      "startDate": "2026-09-16T07:05:40.463Z",
+      "endDate": "2026-09-19T07:05:40.463Z",
+      "status": "active",
+      "days": [
+        {
+          "day": 1,
+          "title": "Shift 1 Trip to Public Transit or Metro",
+          "description": "Leave your motor vehicle parked and take the bus or metro for at least one commute.",
+          "category": "transport",
+          "co2SavingEstimate": 1.4,
+          "points": 30,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        },
+        {
+          "day": 2,
+          "title": "Zero Vampire Power & Unplug Chargers",
+          "description": "Turn off power strips and disconnect laptops and appliances before going to sleep.",
+          "category": "energy",
+          "co2SavingEstimate": 0.5,
+          "points": 20,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        },
+        {
+          "day": 3,
+          "title": "Plant-Rich Day / Meatless Meal",
+          "description": "Enjoy delicious plant-based protein dishes to cut agricultural emissions.",
+          "category": "waste",
+          "co2SavingEstimate": 1.2,
+          "points": 25,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        }
+      ],
+      "allCompleted": false,
+      "bonusPointsAwarded": false,
+      "createdAt": "2026-09-16T07:05:40.463Z",
+      "updatedAt": "2026-09-16T07:05:40.463Z"
+    },
+    {
+      "_id": "fa2e82b5-3b16-4e3d-9fb0-020e8573e427",
+      "id": "fa2e82b5-3b16-4e3d-9fb0-020e8573e427",
+      "userId": "af4ce98f-162f-4bd5-ada6-ce8e301f588c",
+      "cycleNumber": 1,
+      "startDate": "2026-09-16T07:08:07.097Z",
+      "endDate": "2026-09-19T07:08:07.097Z",
+      "status": "active",
+      "days": [
+        {
+          "day": 1,
+          "title": "Take a Zero-Emission Walk / Bike Trip",
+          "description": "Walk or cycle for a trip under 3km instead of requesting motorized transport.",
+          "category": "transport",
+          "co2SavingEstimate": 1.4,
+          "points": 30,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        },
+        {
+          "day": 2,
+          "title": "Zero Vampire Power & Unplug Chargers",
+          "description": "Turn off power strips and disconnect laptops and appliances before going to sleep.",
+          "category": "energy",
+          "co2SavingEstimate": 0.5,
+          "points": 20,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        },
+        {
+          "day": 3,
+          "title": "Plant-Rich Day / Meatless Meal",
+          "description": "Enjoy delicious plant-based protein dishes to cut agricultural emissions.",
+          "category": "waste",
+          "co2SavingEstimate": 1.2,
+          "points": 25,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        }
+      ],
+      "allCompleted": false,
+      "bonusPointsAwarded": false,
+      "createdAt": "2026-09-16T07:08:07.097Z",
+      "updatedAt": "2026-09-16T07:08:07.097Z"
+    },
+    {
+      "_id": "083f6b54-f8d6-4eaf-a7cd-e8eaad12aead",
+      "id": "083f6b54-f8d6-4eaf-a7cd-e8eaad12aead",
+      "userId": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "cycleNumber": 1,
+      "startDate": "2026-09-16T07:23:22.701Z",
+      "endDate": "2026-09-19T07:23:22.701Z",
+      "status": "active",
+      "days": [
+        {
+          "day": 1,
+          "title": "Shift 1 Trip to Public Transit or Metro",
+          "description": "Leave your motor vehicle parked and take the bus or metro for at least one commute.",
+          "category": "transport",
+          "co2SavingEstimate": 1.4,
+          "points": 30,
+          "completed": true,
+          "completedAt": "2026-09-16T07:24:56.986Z",
+          "verificationNote": "metro"
+        },
+        {
+          "day": 2,
+          "title": "Zero Vampire Power & Unplug Chargers",
+          "description": "Turn off power strips and disconnect laptops and appliances before going to sleep.",
+          "category": "energy",
+          "co2SavingEstimate": 0.5,
+          "points": 20,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        },
+        {
+          "day": 3,
+          "title": "Plant-Rich Day / Meatless Meal",
+          "description": "Enjoy delicious plant-based protein dishes to cut agricultural emissions.",
+          "category": "waste",
+          "co2SavingEstimate": 1.2,
+          "points": 25,
+          "completed": false,
+          "completedAt": null,
+          "verificationNote": ""
+        }
+      ],
+      "allCompleted": false,
+      "bonusPointsAwarded": false,
+      "createdAt": "2026-09-16T07:23:22.704Z",
+      "updatedAt": "2026-09-16T07:24:57.002Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "title": "Walk or Cycle for Short Trips (< 3 km)",
+      "description": "Choose active mobility instead of fuel-powered vehicles for errands or commuting.",
+      "category": "transport",
+      "co2SavedKg": 0.85,
+      "points": 25,
+      "difficulty": "Easy",
+      "icon": "🚲"
+    },
+    {
+      "id": "act-2",
+      "title": "Take Public Transit (Bus or Metro)",
+      "description": "Utilize communal rapid transit for your daily university or school commute.",
+      "category": "transport",
+      "co2SavedKg": 1.2,
+      "points": 30,
+      "difficulty": "Medium",
+      "icon": "🚌"
+    },
+    {
+      "id": "act-3",
+      "title": "Organize or Join a Carpool",
+      "description": "Share your vehicle ride with 2 or more peers heading to the same destination.",
+      "category": "transport",
+      "co2SavedKg": 0.95,
+      "points": 20,
+      "difficulty": "Medium",
+      "icon": "🚗"
+    },
+    {
+      "id": "act-4",
+      "title": "Zero Single-Use Plastic Day",
+      "description": "Carry a reusable water bottle, cloth bag, and metal/bamboo straw all day.",
+      "category": "waste",
+      "co2SavedKg": 0.4,
+      "points": 20,
+      "difficulty": "Easy",
+      "icon": "🍶"
+    },
+    {
+      "id": "act-5",
+      "title": "Cold Water Laundry Wash",
+      "description": "Run washing machines on 20-30°C cold cycles to eliminate water heating energy.",
+      "category": "energy",
+      "co2SavedKg": 0.6,
+      "points": 15,
+      "difficulty": "Easy",
+      "icon": "👕"
+    },
+    {
+      "id": "act-6",
+      "title": "Campus / Local Park Eco Cleanup",
+      "description": "Collect and segregate recyclables in a community green space.",
+      "category": "civic",
+      "co2SavedKg": 1.5,
+      "points": 50,
+      "difficulty": "Hard",
+      "icon": "🧹"
+    },
+    {
+      "id": "act-7",
+      "title": "Plant a Native Tree or Herb Sapling",
+      "description": "Plant and water a native perennial tree sapling or balcony herb pot.",
+      "category": "civic",
+      "co2SavedKg": 2.1,
+      "points": 60,
+      "difficulty": "Hard",
+      "icon": "🌱"
+    },
+    {
+      "id": "act-8",
+      "title": "Vampire Power Shutdown",
+      "description": "Unplug idle electronics, laptop chargers, and set power strips to switch-off before sleep.",
+      "category": "energy",
+      "co2SavedKg": 0.5,
+      "points": 15,
+      "difficulty": "Easy",
+      "icon": "🔌"
+    }
+  ],
+  "completedActivities": [
+    {
+      "_id": "bae4b515-c2d3-439c-ba58-f08a55680571",
+      "id": "bae4b515-c2d3-439c-ba58-f08a55680571",
+      "userId": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "activityId": "cycle-1-day-1",
+      "activityTitle": "Shift 1 Trip to Public Transit or Metro",
+      "category": "transport",
+      "pointsEarned": 30,
+      "co2SavedKg": 1.4,
+      "note": "Shifted morning commute to light rail transit",
+      "createdAt": "2026-09-16T07:02:50.959Z",
+      "updatedAt": "2026-09-16T07:02:50.959Z"
+    },
+    {
+      "_id": "288a1742-cde4-40b3-b31f-c01183b76533",
+      "id": "288a1742-cde4-40b3-b31f-c01183b76533",
+      "userId": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "activityId": "cycle-1-day-1",
+      "activityTitle": "Shift 1 Trip to Public Transit or Metro",
+      "category": "transport",
+      "pointsEarned": 30,
+      "co2SavedKg": 1.4,
+      "note": "metro",
+      "createdAt": "2026-09-16T07:24:56.986Z",
+      "updatedAt": "2026-09-16T07:24:56.986Z"
+    }
+  ],
+  "greenCommutes": [],
+  "surveys": [],
+  "surveyResponses": [],
+  "badges": [
+    {
+      "id": "badge-starter",
+      "name": "Green Starter",
+      "description": "Completed your first verified climate action on EcoRise.",
+      "icon": "🌱",
+      "category": "milestone",
+      "requirementType": "activity_count",
+      "requirementValue": 1
+    },
+    {
+      "id": "badge-transit",
+      "name": "Metro Nomad",
+      "description": "Logged 3 sustainable green transit commutes.",
+      "icon": "🚇",
+      "category": "transport",
+      "requirementType": "commute_count",
+      "requirementValue": 3
+    },
+    {
+      "id": "badge-streak-3",
+      "name": "Streak Pioneer",
+      "description": "Maintained an unbroken 3-day climate action streak.",
+      "icon": "🔥",
+      "category": "streak",
+      "requirementType": "streak",
+      "requirementValue": 3
+    },
+    {
+      "id": "badge-streak-7",
+      "name": "Eco Sentinel",
+      "description": "Maintained an unbroken 7-day streak and earned an Eco Shield.",
+      "icon": "🛡️",
+      "category": "streak",
+      "requirementType": "streak",
+      "requirementValue": 7
+    },
+    {
+      "id": "badge-cycle-1",
+      "name": "Mission Accomplished",
+      "description": "Successfully completed all 3 days of a 3-Day Climate Challenge.",
+      "icon": "🎯",
+      "category": "challenge",
+      "requirementType": "cycles_completed",
+      "requirementValue": 1
+    },
+    {
+      "id": "badge-co2-cutter",
+      "name": "Decarbonizer",
+      "description": "Reduced estimated weekly transport emissions by 15% or more.",
+      "icon": "📉",
+      "category": "co2",
+      "requirementType": "co2_reduction_pct",
+      "requirementValue": 15
+    },
+    {
+      "id": "badge-champion",
+      "name": "SDG 13 Civic Champion",
+      "description": "Accumulated over 250 Eco Points in verified civic climate action.",
+      "icon": "🏆",
+      "category": "milestone",
+      "requirementType": "points",
+      "requirementValue": 250
+    }
+  ],
+  "userBadges": [
+    {
+      "_id": "bfb3be7a-3038-47c6-a793-79f6576738a5",
+      "id": "bfb3be7a-3038-47c6-a793-79f6576738a5",
+      "userId": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "badgeId": "badge-starter",
+      "badgeName": "Green Starter",
+      "badgeIcon": "🌱",
+      "earnedAt": "2026-09-16T07:02:50.927Z",
+      "createdAt": "2026-09-16T07:02:50.927Z",
+      "updatedAt": "2026-09-16T07:02:50.927Z"
+    },
+    {
+      "_id": "82f170c1-7f08-4b21-87b4-e7c7bd1c8cd4",
+      "id": "82f170c1-7f08-4b21-87b4-e7c7bd1c8cd4",
+      "userId": "af4ce98f-162f-4bd5-ada6-ce8e301f588c",
+      "badgeId": "badge-starter",
+      "badgeName": "Green Starter",
+      "badgeIcon": "🌱",
+      "earnedAt": "2026-09-16T07:08:07.094Z",
+      "createdAt": "2026-09-16T07:08:07.094Z",
+      "updatedAt": "2026-09-16T07:08:07.094Z"
+    },
+    {
+      "_id": "43226a26-d952-4219-9fa8-28ab9ab6e394",
+      "id": "43226a26-d952-4219-9fa8-28ab9ab6e394",
+      "userId": "35ccffd7-bd61-428c-aa59-47daca9f4625",
+      "badgeId": "badge-starter",
+      "badgeName": "Green Starter",
+      "badgeIcon": "🌱",
+      "earnedAt": "2026-09-16T07:23:22.698Z",
+      "createdAt": "2026-09-16T07:23:22.698Z",
+      "updatedAt": "2026-09-16T07:23:22.698Z"
+    }
+  ],
+  "recognitions": [
+    {
+      "_id": "0fde01a5-38b8-4ce0-a5e6-650adb385ecf",
+      "id": "0fde01a5-38b8-4ce0-a5e6-650adb385ecf",
+      "userId": "f3444d87-1738-4868-95a8-f63b99e6683e",
+      "userName": "Maya Lin",
+      "title": "SDG 13 Civic Climate Leadership Recognition",
+      "tier": "Bronze",
+      "certificateNumber": "ECO-SDG13-2026-HTPNOM",
+      "pointsAtIssue": 50,
+      "co2SavedKg": 3,
+      "issuedAt": "2026-09-16T07:02:50.989Z",
+      "verifiedBy": "EcoRise Civic Council & SDG 13 Action Hub",
+      "createdAt": "2026-09-16T07:02:50.989Z",
+      "updatedAt": "2026-09-16T07:02:50.989Z"
+    }
+  ]
+}
