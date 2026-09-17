@@ -5,7 +5,7 @@
 
 Created by **Samrat Choudhury**, **Sanjana SD**, and **Rohith S**.
 
-For project-related queries, contact **[samrat252007@gmail.com](mailto:samrat252007@gmail.com)**.
+For project-related queries, contact **[sanjanasd111@gmail.com](mailto:sanjanasd111@gmail.com)**.
 
 > **Small Habits. Big Climate Impact.**  
 > A polished, presentation-ready digital sustainability dashboard that turns weekly eco-friendly habits into measurable climate action, dynamic progress tracking, and companion mascot evolution.
